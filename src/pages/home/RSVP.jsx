@@ -34,10 +34,9 @@ const RSVP = () => {
         setLoading(true);
 
         try {
-            const API_URL =
-                import.meta.env.VITE_API_BASE_URL || "/api/rsvp";
+            const API_URL = "http://localhost:3000/api/rsvp";
 
-            const res = await fetch(`${API_URL}`, {
+            const res = await fetch(API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, response }),
@@ -83,13 +82,7 @@ const RSVP = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
             </div>
 
-            {showConfetti && (
-                <Confetti
-                    recycle={false}
-                    numberOfPieces={1000}
-                    style={{ zIndex: 11111 }}
-                />
-            )}
+            {showConfetti && <Confetti recycle={false} numberOfPieces={1000} style={{ zIndex: 11111 }} />}
 
             <div className="relative z-10 max-w-2xl w-full px-6 text-center text-white">
                 <motion.h2
@@ -107,8 +100,7 @@ const RSVP = () => {
                     transition={{ duration: 1.2, delay: 0.3 }}
                     className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed"
                 >
-                    Your presence means the world to us. Please let us know if
-                    you'll be joining the celebration. ✨
+                    Your presence means the world to us. Please let us know if you'll be joining the celebration. ✨
                 </motion.p>
 
                 <AnimatePresence>
@@ -120,12 +112,8 @@ const RSVP = () => {
                             transition={{ duration: 0.5 }}
                             className="flex items-center justify-center flex-col gap-3 mt-8 bg-green-500/30 text-rose-100 px-6 rounded-xl shadow-xl font-semibold animate-fadeIn py-5 mb-4"
                         >
-                            <CheckCircle2
-                                size={84}
-                                className="text-rose-300 animate-pulse"
-                            />
-                            🎊 Thank you, {name || "Guest"}! We can't wait to
-                            celebrate with you!
+                            <CheckCircle2 size={84} className="text-rose-300 animate-pulse" />
+                            🎊 Thank you, {name || "Guest"}! We can't wait to celebrate with you!
                         </motion.div>
                     )}
                 </AnimatePresence>
@@ -161,12 +149,8 @@ const RSVP = () => {
                             onChange={(e) => setResponse(e.target.value)}
                             className="w-full border border-white/20 rounded-lg p-3 bg-white/10 text-white focus:outline-none focus:ring-2 focus:ring-rose-400 transition"
                         >
-                            <option className="text-gray-900">
-                                Will attend 🎉
-                            </option>
-                            <option className="text-gray-900">
-                                Can't make it 💔
-                            </option>
+                            <option className="text-gray-900">Will attend 🎉</option>
+                            <option className="text-gray-900">Can't make it 💔</option>
                         </motion.select>
                     </div>
 
@@ -175,11 +159,8 @@ const RSVP = () => {
                         whileTap={!loading ? { scale: 0.95 } : {}}
                         type="submit"
                         disabled={loading}
-                        className={`w-full py-3 rounded-full text-rose text-lg font-semibold shadow-md transition 
-                        ${
-                            loading
-                                ? "bg-gray-400 text-white cursor-not-allowed"
-                                : "bg-gradient-to-r from-rose-500 to-pink-500 hover:shadow-lg"
+                        className={`w-full py-3 rounded-full text-rose text-lg font-semibold shadow-md transition ${
+                            loading ? "bg-gray-400 text-white cursor-not-allowed" : "bg-gradient-to-r from-rose-500 to-pink-500 hover:shadow-lg"
                         }`}
                     >
                         {loading
@@ -198,10 +179,7 @@ const RSVP = () => {
                                 transition={{ duration: 0.4 }}
                                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500/30 via-pink-500/20 to-red-500/30 text-red-200 px-5 py-3 rounded-xl mt-3 text-sm shadow-lg animate-fadeIn"
                             >
-                                <XCircle
-                                    size={20}
-                                    className="text-red-300 animate-pulse"
-                                />
+                                <XCircle size={20} className="text-red-300 animate-pulse" />
                                 <span>{error}</span>
                             </motion.div>
                         )}

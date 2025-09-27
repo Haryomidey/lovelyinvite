@@ -8,15 +8,15 @@ export default async function handler(req, res) {
             "https://script.google.com/macros/s/AKfycbwY1RfjiV99gsemO--yaW6b7jc66EWDxLA-zL57ZAzpMh2B3Md6WL0r68a5Ezhlqz03-Q/exec",
             {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(req.body),
             }
         );
 
+        // parse Apps Script response
         const data = await response.json();
 
+        // send back to frontend
         res.status(200).json(data);
     } catch (err) {
         console.error(err);
