@@ -4,9 +4,6 @@ import Confetti from "react-confetti";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { images } from "../../assets/images";
 
-const URL =
-    "https://script.google.com/macros/s/AKfycbxc4zjJjI21UCdMnSrQFBH5qSfhhDl5Y9q9IgwQ_jKhW5Y74X7C0LkTK5kFAqIC5sXE/exec";
-
 const RSVP = () => {
     const [name, setName] = useState("");
     const [response, setResponse] = useState("Will attend 🎉");
@@ -37,7 +34,10 @@ const RSVP = () => {
         setLoading(true);
 
         try {
-            const res = await fetch(URL, {
+            const API_URL =
+                import.meta.env.VITE_API_BASE_URL || "/api/rsvp";
+
+            const res = await fetch(`${API_URL}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, response }),

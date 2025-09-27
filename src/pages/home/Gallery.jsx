@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { images as Images } from "../../assets/images";
 
-const fallbackImage = "https://via.placeholder.com/600x800?text=Wedding+Moment";
+const fallbackImage = "";
 
 const Gallery = () => {
     const [selectedIndex, setSelectedIndex] = useState(null);
