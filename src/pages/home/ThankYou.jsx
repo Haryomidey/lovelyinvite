@@ -18,7 +18,7 @@ const ThankYou = ({date, venue, address, dressCode}) => {
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-4xl md:text-5xl font-playfair font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-rose drop-shadow-lg"
+                    className="text-4xl md:text-5xl sacramento font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-rose drop-shadow-lg"
                 >
                     Thank You for Your RSVP 💌
                 </motion.h2>
@@ -27,7 +27,7 @@ const ThankYou = ({date, venue, address, dressCode}) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1.2, delay: 0.3 }}
-                    className="text-lg md:text-xl text-gray-200 max-w-xl mx-auto leading-relaxed mb-8"
+                    className="text-lg md:text-xl text-gray-200 max-w-xl mx-auto leading-relaxed mb-8 font-playfair"
                 >
                     We're beyond thrilled to have you with us on this magical day.  
                     Your love, blessings, and presence mean the world to us.  
@@ -40,20 +40,25 @@ const ThankYou = ({date, venue, address, dressCode}) => {
                     transition={{ duration: 1.2, delay: 0.5 }}
                     className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-6 md:p-8 border border-white/10"
                 >
-                    <p className="text-lg text-gray-200 mb-3">
-                        📅 <span className="text-pink-300 font-semibold">Date: </span>{date.toLocaleDateString(undefined, {
+                    <p className="text-lg text-gray-200 mb-3 font-playfair">
+                        📅 <span className="text-pink-300 font-semibold font-playfair">Date: </span>{date.toLocaleDateString(undefined, {
                             weekday: "long",
                             month: "long",
                             day: "numeric",
                             year: "numeric",
                         })}
                     </p>
-                    <p className="text-lg text-gray-200 mb-3">
-                        📍 <span className="text-pink-300 font-semibold">Venue:</span> {venue}
+                    <p className="text-lg text-gray-200 mb-3 font-playfair">
+                        📍 <span className="text-pink-300 font-semibold font-playfair">Venue:</span> {venue}
                     </p>
-                    <p className="text-lg text-gray-200">
-                        🎉 <span className="text-pink-300 font-semibold">Dress Code:</span> {dressCode}
-                    </p>
+                    <div className="space-y-1 text-gray-200 font-semibold font-playfair">
+                        <p className="font-playfair">
+                            👔 <span className="text-pink-300 font-semibold font-playfair">Gents:</span> {dressCode.gents}
+                        </p>
+                        <p className="font-playfair">
+                            👗 <span className="text-pink-300 font-semibold font-playfair">Ladies:</span> {dressCode.ladies}
+                        </p>
+                    </div>
                 </motion.div>
 
                 <motion.a

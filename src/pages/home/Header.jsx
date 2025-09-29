@@ -39,11 +39,11 @@ const Header = () => {
                     className="flex items-center gap-4 cursor-pointer"
                 >
                     <div className={`w-14 h-14 flex items-center justify-center rounded-full border-2 border-rose bg-white shadow-lg hover:scale-105 transition-transform duration-300`}>
-                        <span className={`font-playfair font-bold text-sm ${logoSmall}`}>
+                        <span className={`sacramento font-bold text-sm ${logoSmall}`}>
                             M & T
                         </span>
                     </div>
-                    <span className={`hidden sm:block font-playfair text-xl font-semibold tracking-wide ${logoTextColor}`}>
+                    <span className={`hidden sm:block sacramento text-xl font-semibold tracking-wide ${logoTextColor}`}>
                         Medese & Timilehin
                     </span>
                 </motion.div>
@@ -60,7 +60,7 @@ const Header = () => {
                         >
                             <a
                                 href={link.href}
-                                className={`relative text-base font-medium transition duration-300 group ${linkColor}`}
+                                className={`relative text-2xl font-medium great-vibes transition duration-300 group ${linkColor}`}
                             >
                                 {link.name}
                                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-rose group-hover:w-full transition-all duration-300"></span>
@@ -107,7 +107,7 @@ const Header = () => {
                                     <a
                                         href={link.href}
                                         onClick={() => setIsOpen(false)}
-                                        className="text-lg font-medium text-gray-700 hover:text-rose transition duration-300"
+                                        className="text-2xl font-medium sacramento text-gray-700 hover:text-rose transition duration-300"
                                     >
                                         {link.name}
                                     </a>

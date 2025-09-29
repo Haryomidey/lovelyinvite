@@ -17,7 +17,7 @@ const TimeCard = ({ label, value }) => (
             {value.toString().padStart(2, "0")}
         </div>
 
-        <div className="text-xs md:text-sm uppercase tracking-wider mt-3 text-gray-700 font-semibold">
+        <div className="text-xs md:text-sm uppercase tracking-wider mt-3 text-gray-700 font-bold sacramento">
             {label}
         </div>
     </motion.div>

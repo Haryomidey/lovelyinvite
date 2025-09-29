@@ -62,7 +62,7 @@ const Gallery = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-playfair text-rose font-bold mb-12"
+                    className="text-5xl md:text-5xl sacramento text-rose font-bold mb-12"
                 >
                     Our Moments 🎞️
                 </motion.h2>

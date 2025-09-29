@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const Hero = ({ names, date, coverImg }) => {
+const Hero = ({ names, date, coverImg, bgImage }) => {
     const texts = [
+        "You are invited to Medese and timi's Wedding party!",
         "Join us for a magical celebration of love!",
         "Two hearts, one journey, endless memories.",
         "Your presence will make our day even more special."
@@ -49,7 +50,7 @@ const Hero = ({ names, date, coverImg }) => {
             id="home"
             className="relative py-28 md:py-36 text-center md:text-left overflow-hidden"
             style={{
-                backgroundImage: `url(${coverImg})`,
+                backgroundImage: `url(${bgImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
@@ -62,7 +63,7 @@ const Hero = ({ names, date, coverImg }) => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="uppercase tracking-[5px] text-sm md:text-base text-gold font-montserrat mb-4 drop-shadow-md bg-white w-fit mx-auto md:mx-0 px-1"
+                        className="uppercase tracking-[5px] text-sm md:text-base text-gold font-playfair mb-4 drop-shadow-md bg-white w-fit mx-auto md:mx-0 px-1"
                     >
                         <p>You're Invited To</p>
                     </motion.div>
@@ -71,7 +72,7 @@ const Hero = ({ names, date, coverImg }) => {
                         initial={{ y: -30, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="font-playfair text-5xl md:text-7xl font-bold text-white drop-shadow-xl"
+                        className="great-vibes text-5xl md:text-7xl font-bold text-white drop-shadow-xl"
                     >
                         {names}
                     </motion.h1>
@@ -80,7 +81,7 @@ const Hero = ({ names, date, coverImg }) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4 }}
-                        className="mt-6 text-lg md:text-xl text-white font-light tracking-wide drop-shadow-md min-h-[60px]"
+                        className="mt-6 text-lg md:text-xl text-white font-light tracking-wide font-playfair drop-shadow-md min-h-[60px]"
                     >
                         {displayText}
                         <span className={`${showCursor ? "inline-block" : "hidden"} animate-pulse`}>|</span>

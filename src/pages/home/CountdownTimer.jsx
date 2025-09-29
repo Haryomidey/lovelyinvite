@@ -42,7 +42,7 @@ const CountdownTimer = ({ targetDate }) => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="font-playfair text-3xl md:text-4xl text-rose font-semibold drop-shadow-lg"
+                        className="great-vibes text-3xl md:text-4xl text-rose font-semibold drop-shadow-lg"
                     >
                         The Countdown to Our Special Day ❤️
                     </motion.h2>
@@ -51,7 +51,7 @@ const CountdownTimer = ({ targetDate }) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="mt-3 text-gray-700 text-sm md:text-base max-w-lg mx-auto"
+                        className="mt-3 text-gray-700 text-sm md:text-base font-playfair max-w-lg mx-auto"
                     >
                         We can't wait to celebrate with you! Save the date and join us
                         for a magical day filled with love, laughter, and unforgettable

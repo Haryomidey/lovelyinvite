@@ -1,7 +1,5 @@
 import Logo from './logo.svg';
 
-import CoupleMain from './couple-main.jpg';
-import Couple1 from './couple-1.jpg';
 import Couple2 from './couple-2.jpg';
 import Couple3 from './couple-3.jpg';
 import Couple4 from './couple-4.jpg';
@@ -24,17 +22,17 @@ import Couple24 from './couple-24.jpg';
 import Couple25 from './couple-25.jpg';
 import Couple26 from './couple-26.jpg';
 
+import PreWedMain from './prev-wed-main.jpg';
 import PreWed1 from './prev-wed-1.jpg';
 import PreWed2 from './prev-wed-2.jpg';
 import PreWed3 from './prev-wed-3.jpg';
 import PreWed4 from './prev-wed-4.jpg';
 import PreWed5 from './prev-wed-5.jpg';
+import PreWed6 from './prev-wed-6.jpg';
 
 export const images = {
     logo: Logo,
 
-    coupleMain: CoupleMain,
-    couple1: Couple1,
     couple2: Couple2,
     couple3: Couple3,
     couple4: Couple4,
@@ -57,9 +55,11 @@ export const images = {
     couple25: Couple25,
     couple26: Couple26,
 
+    preWedMain: PreWedMain,
     preWed1: PreWed1,
     preWed2: PreWed2,
     preWed3: PreWed3,
     preWed4: PreWed4,
     preWed5: PreWed5,
+    preWed6: PreWed6,
 };

@@ -94,7 +94,7 @@ const RSVP = () => {
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-5xl md:text-6xl font-playfair font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-300 to-pink-200 drop-shadow-lg"
+                    className="text-5xl md:text-6xl great-vibes font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-300 to-pink-200 drop-shadow-lg"
                 >
                     Be Part of Our Forever 💍
                 </motion.h2>
@@ -103,7 +103,7 @@ const RSVP = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1.2, delay: 0.3 }}
-                    className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed"
+                    className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed font-playfair"
                 >
                     Your presence means the world to us. Please let us know if you'll be joining the celebration. ✨
                 </motion.p>

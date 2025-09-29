@@ -7,7 +7,7 @@ const OurStory = () => {
     const [showFullStory, setShowFullStory] = useState(false);
 
     return (
-        <section id="story" className="relative bg-gradient-to-b from-pink-50 via-rose-50 to-white py-20 overflow-hidden">
+        <section id="story" className="relative bg-gradient-to-b from-pink-50 via-rose-50 to-white pt-20 pb-40 overflow-hidden">
             <motion.div
                 className="absolute top-10 left-10 text-rose/40"
                 initial={{ y: 0 }}
@@ -31,7 +31,7 @@ const OurStory = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-playfair text-rose font-bold mb-10"
+                    className="text-4xl md:text-5xl great-vibes text-rose font-bold mb-10"
                 >
                     Our Love Story ❤️
                 </motion.h2>
@@ -66,12 +66,13 @@ const OurStory = () => {
                         viewport={{ once: true }}
                         className="text-left"
                     >
-                        <p className="text-gray-700 text-lg leading-relaxed">
-                            ❤️ The beautiful and best part is I'm getting married to the LOVE OF MY LIFE..
-                            Medese
-                            Remember today my Love, it is the beginning of our Forever!
-                            Timi ❤️
-                        </p>
+                        <div className="text-gray-700 text-3xl font-semibold leading-relaxed great-vibes">
+                            ✨ The most beautiful part of my life is that I get to marry the love of my heart… 💍❤
+                                <br />
+                                Medese
+                                <br />
+                                💫 My Love, Remember today for it marks the start of our Forever
+                            </div>
 
                         {showFullStory && (
                             <motion.p

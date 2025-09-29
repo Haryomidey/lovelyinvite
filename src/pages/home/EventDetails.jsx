@@ -14,7 +14,7 @@ const EventDetails = ({ venue, time, address, dressCode }) => {
                 viewport={{ once: true }}
                 className="bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl px-5 md:px-10 py-10 relative border border-rose/20"
             >
-                <h2 className="text-4xl font-playfair text-center text-rose font-semibold mb-10 drop-shadow-sm">
+                <h2 className="text-4xl great-vibes text-center text-rose font-semibold mb-10 drop-shadow-sm">
                     Event Details 💍
                 </h2>
 
@@ -22,7 +22,20 @@ const EventDetails = ({ venue, time, address, dressCode }) => {
                     <DetailRow label="Venue" value={venue} />
                     <DetailRow label="Time" value={time} />
                     <DetailRow label="Address" value={address} />
-                    <DetailRow label="Dress Code" value={dressCode} />
+
+                    <DetailRow
+                        label="Style"
+                        value={
+                            <div className="space-y-1">
+                                <p className="font-playfair">
+                                    👔 Gents: {dressCode.gents}
+                                </p>
+                                <p className="font-playfair">
+                                    👗 Ladies: {dressCode.ladies}
+                                </p>
+                            </div>
+                        }
+                    />
                 </div>
 
                 <div className="mt-10 relative">
@@ -35,7 +48,11 @@ const EventDetails = ({ venue, time, address, dressCode }) => {
                             <motion.div
                                 initial={{ scale: 0.8, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
-                                transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+                                transition={{
+                                    duration: 0.5,
+                                    repeat: Infinity,
+                                    repeatType: "reverse",
+                                }}
                                 className="w-12 h-12 border-4 border-rose border-t-transparent rounded-full animate-spin"
                             ></motion.div>
                         </div>

@@ -5,7 +5,7 @@ const icons = {
     Venue: <FaMapMarkerAlt className="text-rose w-5 h-5" />,
     Time: <FaClock className="text-emerald w-5 h-5" />,
     Address: <FaMapSigns className="text-gold w-5 h-5" />,
-    "Dress Code": <FaTshirt className="text-gray-700 w-5 h-5" />,
+    Style: <FaTshirt className="text-gray-700 w-5 h-5" />,
 };
 
 const DetailRow = ({ label, value }) => (
@@ -18,10 +18,10 @@ const DetailRow = ({ label, value }) => (
         <div className="flex-shrink-0">{icons[label]}</div>
 
         <div>
-            <div className="text-sm uppercase text-gray-500 font-medium tracking-wide">
+            <div className="text-sm uppercase text-gray-500 font-medium tracking-wide font-playfair">
                 {label}
             </div>
-            <div className="text-gray-800 font-semibold text-base mt-1">
+            <div className="text-gray-800 text-base mt-1 font-playfair">
                 {value}
             </div>
         </div>

@@ -7,12 +7,11 @@ const PreWeddingShoot = () => {
     const [selectedIndex, setSelectedIndex] = useState(null);
 
     const preWeddingImages = [
-        images.coupleMain,
-        images.preWed1,
-        images.preWed2,
+        images.preWedMain,
         images.preWed3,
-        images.preWed4,
+        images.preWed1,
         images.preWed5,
+        images.preWed4,
     ];
 
     const handlePrev = () => {
@@ -55,7 +54,7 @@ const PreWeddingShoot = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-playfair text-rose font-bold mb-12"
+                    className="text-4xl md:text-5xl great-vibes text-rose font-bold mb-12"
                 >
                     Pre Wedding Shoot ❤️
                 </motion.h2>
