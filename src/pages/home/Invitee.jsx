@@ -13,7 +13,7 @@ const Invitee = ({ invitees }) => {
                     transition={{ duration: 0.6 }}
                     className="font-playfair text-4xl md:text-5xl font-bold text-rose mb-10"
                 >
-                    Our Special Guests
+                    Our Guests
                 </motion.h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
