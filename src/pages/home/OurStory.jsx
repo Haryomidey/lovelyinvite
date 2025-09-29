@@ -45,7 +45,7 @@ const OurStory = () => {
                         className="relative"
                     >
                         <img
-                            src={images.couple12}
+                            src={images.preWed2}
                             alt="our story"
                             className="rounded-3xl shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-500"
                         />
@@ -67,10 +67,10 @@ const OurStory = () => {
                         className="text-left"
                     >
                         <p className="text-gray-700 text-lg leading-relaxed">
-                            From the very first <span className="text-rose font-semibold">coffee date ☕</span> 
-                            to countless <span className="text-emerald-600 font-semibold">adventures 🌍</span>, our journey
-                            has been full of love, laughter, and magical memories. What started as a simple
-                            friendship blossomed into something extraordinary ❤️.
+                            ❤️ The beautiful and best part is I'm getting married to the LOVE OF MY LIFE..
+                            Medese
+                            Remember today my Love, it is the beginning of our Forever!
+                            Timi ❤️
                         </p>
 
                         {showFullStory && (

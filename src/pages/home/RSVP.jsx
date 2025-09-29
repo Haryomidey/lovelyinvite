@@ -34,13 +34,17 @@ const RSVP = () => {
         setLoading(true);
 
         try {
-            const API_URL = "http://localhost:3000/api/rsvp";
+            const formData = new URLSearchParams();
+            formData.append("name", name);
+            formData.append("response", response);
 
-            const res = await fetch(API_URL, {
+            const res = await fetch(
+            "https://script.google.com/macros/s/AKfycbzsDEmyVOEERdPmY7gAzoeNSGvRlkFL5KCkumS_xOmM0EBpdnhirbn-FTWwJRtLQgXBUA/exec",
+            {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ name, response }),
-            });
+                body: formData,
+            }
+            );
 
             const data = await res.json();
 
@@ -60,6 +64,7 @@ const RSVP = () => {
                 throw new Error(data.message || "Unknown error");
             }
         } catch (err) {
+            console.log(err);
             setError("Something went wrong, please try again.");
             setSubmitted(false);
             setShowConfetti(false);
@@ -187,7 +192,7 @@ const RSVP = () => {
                 </motion.form>
 
                 <div className="mt-8 text-center text-gray-300">
-                    <p className="mb-2">📞 For inquiries, call us:</p>
+                    <p className="mb-2">📞 RSVP, call us:</p>
                     <p className="font-semibold text-rose-200">
                         +234 813 869 1769 <br />
                         +234 903 877 9368

@@ -7,8 +7,6 @@ import Couple3 from './couple-3.jpg';
 import Couple4 from './couple-4.jpg';
 import Couple5 from './couple-5.jpg';
 import Couple6 from './couple-6.jpg';
-import Couple7 from './couple-7.jpg';
-import Couple8 from './couple-8.jpg';
 import Couple9 from './couple-9.jpg';
 import Couple11 from './couple-11.jpg';
 import Couple12 from './couple-12.jpg';
@@ -42,8 +40,6 @@ export const images = {
     couple4: Couple4,
     couple5: Couple5,
     couple6: Couple6,
-    couple7: Couple7,
-    couple8: Couple8,
     couple9: Couple9,
     couple11: Couple11,
     couple12: Couple12,
