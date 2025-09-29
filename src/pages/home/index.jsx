@@ -71,7 +71,7 @@ const WeddingInvite = () => {
                     dressCode="white/black or ash"
                 />
 
-                <Invitee invitees={invitees} />
+                {/* <Invitee invitees={invitees} /> */}
 
                 <PreWeddingShoot />
                 <OurStory />
