@@ -72,7 +72,7 @@ const Header = () => {
                 <motion.a
                     href="#gallery"
                     whileHover={{}}
-                    className={`absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 px-4 py-2 rounded-full border text-xs sm:text-sm font-medium transition-all duration-300 ${isScrolled ? "text-rose hover:bg-rose hover:text-white border-rose" : "text-white border-white hover:bg-rose hover:text-white"}`}
+                    className={`absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 px-4 py-2 rounded-full border text-xs sm:text-sm font-medium transition-all duration-300 font-playfair ${isScrolled ? "text-rose hover:bg-rose hover:text-white border-rose" : "text-white border-white hover:bg-rose hover:text-white"}`}
                 >
                     #M&T2025
                 </motion.a>
