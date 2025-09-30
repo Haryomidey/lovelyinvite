@@ -69,9 +69,12 @@ const OurStory = () => {
                         <div className="text-gray-700 text-3xl font-semibold leading-relaxed great-vibes">
                             ✨ The most beautiful part of my life is that I get to marry the love of my heart… 💍❤
                                 <br />
-                                Medese
+                                "Medese.."
                                 <br />
                                 💫 My Love, Remember today for it marks the start of our Forever
+                                <br />
+                                "Timilehin.."
+                                <br />
                             </div>
 
                         {showFullStory && (
