@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const Hero = ({ names, date, coverImg, bgImage }) => {
+const Hero = ({ names, date, bgImage }) => {
     const texts = [
         "You are invited to Medese and timi's Wedding party!",
         "Join us for a magical celebration of love!",
@@ -59,14 +59,6 @@ const Hero = ({ names, date, coverImg, bgImage }) => {
 
             <div className="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
                 <div className="flex-1 z-10">
-                    <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="uppercase tracking-[5px] text-sm md:text-base text-gold font-playfair mb-4 drop-shadow-md bg-white w-fit mx-auto md:mx-0 px-1"
-                    >
-                        <p>You're Invited To</p>
-                    </motion.div>
 
                     <motion.h1
                         initial={{ y: -30, opacity: 0 }}
@@ -123,7 +115,7 @@ const Hero = ({ names, date, coverImg, bgImage }) => {
                     className="relative md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl border-[8px] border-white/70 z-10 group"
                 >
                     <img
-                        src={coverImg}
+                        src={bgImage}
                         alt="couple"
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500 ease-in-out"
                     />

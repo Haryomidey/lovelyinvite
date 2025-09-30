@@ -1,7 +1,6 @@
 import { images } from "../../assets/images"
 import CountdownTimer from "./CountdownTimer"
 import EventDetails from "./EventDetails"
-import Invitee from "./Invitee";
 import Gallery from "./Gallery"
 import Header from "./Header"
 import Hero from "./Hero"
@@ -21,7 +20,6 @@ const WeddingInvite = () => {
                 <Hero
                     names="Medese & Timilehin"
                     date={weddingDate}
-                    coverImg={images.preWedMain}
                     bgImage={images.preWed4}
                 />
                 <CountdownTimer targetDate={weddingDate} />
